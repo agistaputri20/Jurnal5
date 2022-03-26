@@ -31,6 +31,34 @@ namespace modul5_1302201140
             film8.PrintVideoDetails();
             film9.PrintVideoDetails();
             film10.PrintVideoDetails();
+
+            SayaTubeUser namaUser = new SayaTubeUser("Agista Hidayatillah Suparno Putri");
+
+            film1.IncreasePlayCount(1);
+            film2.IncreasePlayCount(3);
+            film3.IncreasePlayCount(5);
+            film4.IncreasePlayCount(3);
+            film5.IncreasePlayCount(1);
+            film6.IncreasePlayCount(2);
+            film7.IncreasePlayCount(2);
+            film8.IncreasePlayCount(3);
+            film9.IncreasePlayCount(5);
+            film10.IncreasePlayCount(2);
+
+            namaUser.AddVideo(film1);
+            namaUser.AddVideo(film2);
+            namaUser.AddVideo(film3);
+            namaUser.AddVideo(film4);
+            namaUser.AddVideo(film5);
+            namaUser.AddVideo(film6);
+            namaUser.AddVideo(film7);
+            namaUser.AddVideo(film8);
+            namaUser.AddVideo(film9);
+            namaUser.AddVideo(film10);
+
+            film1.PrintVideoDetails();
+
+            namaUser.PrintAllVideoPlaycount();
         }
     }
 }
